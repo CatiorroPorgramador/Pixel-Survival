@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Muzzle Flash Sprite.png-ead03b4031db810062953e306ed2b8c5.stex"
+path="res://.import/Inventory2.png-1f4a214cc54678316d9958e254e3f1d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data/Sprites/Muzzle Flash Sprite.png"
-dest_files=[ "res://.import/Muzzle Flash Sprite.png-ead03b4031db810062953e306ed2b8c5.stex" ]
+source_file="res://Data/Sprites/Inventory/Inventory2.png"
+dest_files=[ "res://.import/Inventory2.png-1f4a214cc54678316d9958e254e3f1d2.stex" ]
 
 [params]
 

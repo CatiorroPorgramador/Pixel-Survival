@@ -1,6 +1,6 @@
 extends Area2D
 
-export (int) var speed = 3500
+export (int) var speed = 4000
 
 var motion = Vector2()
 
@@ -9,7 +9,6 @@ func _ready():
 	
 func _physics_process(delta):
 	position += motion * delta
-	rotate(90)
 
 
 func _on_Shot_body_entered(body):

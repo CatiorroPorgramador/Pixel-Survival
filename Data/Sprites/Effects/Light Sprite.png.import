@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Crosshair Sprite Sheet.png-272e6e1c94c2281bd799eddeb75bdc54.stex"
+path="res://.import/Light Sprite.png-f519a17b623feadb28e980b7fb042a22.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Data/Sprites/Crosshair Sprite Sheet.png"
-dest_files=[ "res://.import/Crosshair Sprite Sheet.png-272e6e1c94c2281bd799eddeb75bdc54.stex" ]
+source_file="res://Data/Sprites/Effects/Light Sprite.png"
+dest_files=[ "res://.import/Light Sprite.png-f519a17b623feadb28e980b7fb042a22.stex" ]
 
 [params]
 
