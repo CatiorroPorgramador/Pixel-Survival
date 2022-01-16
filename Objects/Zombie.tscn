@@ -1,8 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/Zombie.gd" type="Script" id=1]
 [ext_resource path="res://Data/Minecraftia-Regular.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Data/Sprites/Enemy Sprite Sheet.png" type="Texture" id=3]
+[ext_resource path="res://Data/Sprites/Zombies/Simple Zombie Sprite Sheet.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 10, 7.1 )
@@ -57,6 +57,10 @@ tracks/0/keys = {
 [sub_resource type="DynamicFont" id=5]
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=10]
+size = 21
+font_data = ExtResource( 2 )
+
 [node name="Zombie" type="KinematicBody2D"]
 position = Vector2( 286, 283 )
 scale = Vector2( 0.9, 0.9 )
@@ -82,13 +86,29 @@ anims/idle = SubResource( 7 )
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 modulate = Color( 1, 0, 0, 1 )
-margin_left = -35.0
+margin_left = -42.0
 margin_top = -60.0
-margin_right = 36.0
+margin_right = 29.0
 margin_bottom = -37.0
+rect_scale = Vector2( 1.2, 1.2 )
 mouse_filter = 1
 custom_fonts/font = SubResource( 5 )
+max_value = 200.0
 value = 100.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="ProgressBar"]
+margin_left = 5.0
+margin_top = -4.0
+margin_right = 65.0
+margin_bottom = 61.0
+custom_fonts/font = SubResource( 10 )
+text = "100
+"
+align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

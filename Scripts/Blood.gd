@@ -4,7 +4,7 @@ var index:int = 0
 
 func _process(delta):
 	index += 1
-	if (index > 1000): queue_free()
+	if (index > 2000): queue_free()
 
 func _on_Timer_timeout():
 	set_physics_process(false)

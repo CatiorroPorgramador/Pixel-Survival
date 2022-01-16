@@ -1,4 +1,4 @@
 extends StaticBody2D
 
 func _ready():
-	add_to_group('Shots')
+	add_to_group('Boxes')
