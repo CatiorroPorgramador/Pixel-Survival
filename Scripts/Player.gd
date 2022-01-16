@@ -49,8 +49,11 @@ func play_sound(sound):
 
 func movement_control(delta):
 	# Motion
-	motion.x = (int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))) * speed
-	motion.y = (int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))) * speed
+	motion.x = (int(Input.is_action_pressed('ui_right')) - int(Input.is_action_pressed('ui_left'))) * speed
+	motion.y = (int(Input.is_action_pressed('ui_down')) - int(Input.is_action_pressed('ui_up'))) * speed
+	
+	if (Input.is_action_just_pressed('ui_page_up')):
+		$Camera2D.smoothing_enabled = not $Camera2D.smoothing_enabled
 	
 	move_and_slide(motion)
 
